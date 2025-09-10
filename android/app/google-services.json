@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "680365856399",
+    "project_id": "waresysfix1",
+    "storage_bucket": "waresysfix1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680365856399:android:2b4dbfdf406d2a844e02fa",
+        "android_client_info": {
+          "package_name": "com.example.waresys_fix1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680365856399-ni6f2nh2r6lvhou88544m6tr6e5a3bdr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.waresys_fix1",
+            "certificate_hash": "ba17dc5b020b56ab6ff6b3c6d2af99a2885de6e0"
+          }
+        },
+        {
+          "client_id": "680365856399-beami9vpnde2ksbk154koeup0mda797h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6HJ8bNu03MXUEL7kufe_OG6ZRreH7KxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680365856399-beami9vpnde2ksbk154koeup0mda797h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "680365856399-avepsfj2c76pvaaphummvh85hhosr3cg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.waresys.app"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680365856399:android:56b39819ba5521454e02fa",
+        "android_client_info": {
+          "package_name": "com.waresys.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680365856399-1djd4mh1dqlvp80v8lbsu2r980gbh2kp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.waresys.app",
+            "certificate_hash": "ba17dc5b020b56ab6ff6b3c6d2af99a2885de6e0"
+          }
+        },
+        {
+          "client_id": "680365856399-beami9vpnde2ksbk154koeup0mda797h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD6HJ8bNu03MXUEL7kufe_OG6ZRreH7KxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680365856399-beami9vpnde2ksbk154koeup0mda797h.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "680365856399-avepsfj2c76pvaaphummvh85hhosr3cg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.waresys.app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
