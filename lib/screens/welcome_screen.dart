@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                     const Text(
-                      'Login',
+                      'LogOn',
                       style: TextStyle(
                         fontSize: 32,
                         fontWeight: FontWeight.bold,
