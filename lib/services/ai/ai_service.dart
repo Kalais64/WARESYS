@@ -79,12 +79,32 @@ class AIService {
 
   Future<void> _loadModelsFromAssets() async {
     try {
-      // Panggilan ini akan berhasil setelah kita memodifikasi Predictor di Langkah 2
-      await _stockPredictor.initialize(modelPath: 'assets/ml/stock_prediction.tflite');
-      await _salesPredictor.initialize(modelPath: 'assets/ml/sales_prediction.tflite');
-      await _financialPredictor.initialize(modelPath: 'assets/ml/financial_prediction.tflite');
+      debugPrint('🔄 Starting model initialization...');
+      
+      // Try to initialize models with better error handling
+      try {
+        await _stockPredictor.initialize(modelPath: 'assets/ml/stock_prediction.tflite');
+        debugPrint('✅ Stock predictor initialized successfully');
+      } catch (e) {
+        debugPrint('⚠️ Stock predictor failed to initialize: $e');
+      }
+      
+      try {
+        await _salesPredictor.initialize(modelPath: 'assets/ml/sales_prediction.tflite');
+        debugPrint('✅ Sales predictor initialized successfully');
+      } catch (e) {
+        debugPrint('⚠️ Sales predictor failed to initialize: $e');
+      }
+      
+      try {
+        await _financialPredictor.initialize(modelPath: 'assets/ml/financial_prediction.tflite');
+        debugPrint('✅ Financial predictor initialized successfully');
+      } catch (e) {
+        debugPrint('⚠️ Financial predictor failed to initialize: $e');
+      }
 
-      await _logger.log(component: 'model_loader', message: 'All models loaded from assets.', level: AILogLevel.info);
+      await _logger.log(component: 'model_loader', message: 'Model loading completed (some may have failed gracefully).', level: AILogLevel.info);
+      debugPrint('🎯 AI Service initialization completed with graceful fallbacks');
 
     } catch (e, stackTrace) {
       await _logger.logError(
@@ -93,7 +113,8 @@ class AIService {
         error: e,
         stackTrace: stackTrace,
       );
-      rethrow;
+      // Don't rethrow - allow service to continue with limited functionality
+      debugPrint('⚠️ AI Service will continue with limited functionality');
     }
   }
 
